@@ -1,6 +1,6 @@
 //LISÄÄ TÄHÄN SE DOTENV REQUIRE KUN MUUTAT connectauksen ENVKSI
 //require("dotenv").config();
-//import "dotenv/config";
+import "dotenv/config";
 
 //const Pool = require('pg').Pool
 import Pool from "pg-pool";
