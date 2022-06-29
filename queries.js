@@ -1,7 +1,11 @@
 //LISÄÄ TÄHÄN SE DOTENV REQUIRE KUN MUUTAT connectauksen ENVKSI
 //require("dotenv").config();
+//import "dotenv/config";
 
-const Pool = require("pg").Pool;
+//const Pool = require('pg').Pool
+import Pool from "pg-pool";
+//const { Pool } = pkg;
+
 const pool = new Pool({
   user: "tiina",
   host: "localhost",
@@ -72,10 +76,12 @@ const deleteUser = (request, response) => {
   });
 };
 
-module.exports = {
-  getUsers,
-  getUserById,
-  createUser,
-  updateUser,
-  deleteUser,
-};
+// module.exports = {
+//   getUsers,
+//   getUserById,
+//   createUser,
+//   updateUser,
+//   deleteUser,
+// };
+
+export default { getUsers, getUserById, createUser, updateUser, deleteUser };
